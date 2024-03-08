@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey-tournamnet</title>
+
+    <!-- !Tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- !Tailwind link -->
+
+    <!-- !DeisyUi link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- !DeisyUi link -->
+
+    <!-- !google font MANROPE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- !google font MANROPE -->
+
+    <!-- !shared styles  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            colors: {
+              tomato: "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- !shared styles  -->
+  </head>
+  <body class="font-manrope">
+    <!-- !Header Part START here -->
+    <header class="container mx-auto my-5 p-5 md:p-0 rounded-xl">
+      <!-- ?Banner section START here -->
+      <div>
+        <!-- ?from deisyUI START here -->
+        <div class="carousel w-full rounded-xl">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full bg-cover" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/trophies_melbourne.jpg" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./Images/Trophy_Slide.webp" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- ?from deisyUI END here -->
+      </div>
+      <!-- ?Banner section END here -->
+    </header>
+    <!-- !Header Part END here -->
+
+    <!-- !Main Part START here -->
+    <main>
+      <h1 class="text-center text-5xl text">hellp World</h1>
+    </main>
+    <!-- !Main Part END here -->
+
+    <!-- !Footer Part START here -->
+    <footer></footer>
+    <!-- !Footer Part END here -->
+  </body>
+</html>
